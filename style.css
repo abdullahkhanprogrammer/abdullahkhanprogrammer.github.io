@@ -1089,7 +1089,6 @@ footer {
     height: 48px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -1098,13 +1097,15 @@ footer {
     border-radius: 10px;
 
     background: #12283a;
-
     color: #55d6ff;
-
-    font-size: 19px;
-    font-weight: 700;
 }
 
+.connect-button-icon svg {
+    width: 22px;
+    height: 22px;
+
+    fill: currentColor;
+}
 .connect-button-text {
     min-width: 0;
 }
