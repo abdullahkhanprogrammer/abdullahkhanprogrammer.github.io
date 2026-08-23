@@ -1106,17 +1106,7 @@ footer {
 
     fill: currentColor;
 }
-.email-icon {
-    color: #ea4335;
-}
 
-.linkedin-icon {
-    color: #0a66c2;
-}
-
-.facebook-icon {
-    color: #1877f2;
-}
 .connect-button-text {
     min-width: 0;
 }
@@ -1186,4 +1176,9 @@ footer {
         font-size: 12px;
     }
 
+}
+.connect-button-icon img {
+    width: 28px;
+    height: 28px;
+    display: block;
 }
