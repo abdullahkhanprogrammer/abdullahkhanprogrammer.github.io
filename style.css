@@ -994,3 +994,184 @@ footer {
         padding: 22px;
     }
 }
+/* =========================
+   CONNECT PAGE
+========================= */
+
+.connect-page {
+    min-height: 100vh;
+
+    padding: 150px 7% 80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(31, 132, 178, 0.12),
+            transparent 40%
+        );
+}
+
+.connect-content {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+}
+
+.connect-content h1 {
+    margin-bottom: 18px;
+
+    font-size: clamp(42px, 6vw, 65px);
+
+    line-height: 1.1;
+}
+
+.connect-intro {
+    max-width: 520px;
+
+    margin: 0 auto 40px;
+
+    color: #8f9eb2;
+
+    font-size: 16px;
+}
+
+.connect-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+.connect-button {
+    width: 100%;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #0b1827;
+
+    border: 1px solid #25384c;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.connect-button:hover {
+    transform: translateY(-3px);
+
+    border-color: #55d6ff;
+
+    background: #0e1e2f;
+}
+
+.connect-button-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #12283a;
+
+    color: #55d6ff;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.connect-button-text {
+    min-width: 0;
+}
+
+.connect-button-text strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #e9eef7;
+
+    font-size: 16px;
+}
+
+.connect-button-text small {
+    display: block;
+
+    color: #75869a;
+
+    font-size: 13px;
+
+    word-break: break-word;
+}
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   CONNECT PAGE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .connect-page {
+        padding:
+            105px
+            6%
+            65px;
+    }
+
+    .connect-content h1 {
+        font-size: 38px;
+    }
+
+    .connect-intro {
+        font-size: 14px;
+    }
+
+    .connect-button {
+        padding: 15px;
+    }
+
+    .connect-button-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .connect-button-text strong {
+        font-size: 15px;
+    }
+
+    .connect-button-text small {
+        font-size: 12px;
+    }
+
+}
