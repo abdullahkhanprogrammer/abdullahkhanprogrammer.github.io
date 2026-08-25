@@ -1182,3 +1182,348 @@ footer {
     height: 28px;
     display: block;
 }
+/* =========================
+   RESUME PAGE
+========================= */
+
+.resume-container {
+    width: min(1050px, 90%);
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+/* =========================
+   RESUME HEADER
+========================= */
+
+.resume-header {
+    padding-bottom: 45px;
+    border-bottom: 1px solid #263a4e;
+}
+
+.resume-header h1 {
+    font-size: clamp(44px, 6vw, 68px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.resume-header h1 span {
+    color: #55d6ff;
+}
+
+.job-title {
+    color: #c5d0de;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #8192a7;
+    font-size: 14px;
+}
+
+.contact-info a {
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: #55d6ff;
+}
+
+/* =========================
+   RESUME SECTIONS
+========================= */
+
+.resume-section {
+    padding: 42px 0;
+    border-bottom: 1px solid #1b2d40;
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    margin-bottom: 12px;
+    color: #55d6ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.resume-section h2 {
+    margin-bottom: 18px;
+    color: #e9eef7;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+.resume-section > p:not(.section-title) {
+    max-width: 850px;
+    color: #9eacbd;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.skill {
+    padding: 22px;
+    background: #0b1827;
+    border: 1px solid #24384d;
+    border-radius: 12px;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.skill:hover {
+    transform: translateY(-4px);
+    border-color: #55d6ff;
+    background: #0d1c2c;
+}
+
+.skill strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #e9eef7;
+    font-size: 15px;
+}
+
+.skill span {
+    color: #7f90a5;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-item {
+    position: relative;
+    padding-left: 24px;
+    border-left: 2px solid #24384d;
+}
+
+.experience-item h3 {
+    margin-bottom: 12px;
+    color: #e9eef7;
+    font-size: 20px;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+    color: #9eacbd;
+}
+
+.experience-item li {
+    margin-bottom: 9px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.experience-item li::marker {
+    color: #55d6ff;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.project {
+    padding: 25px;
+    background: #0b1827;
+    border: 1px solid #24384d;
+    border-radius: 12px;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    border-color: #55d6ff;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #e9eef7;
+    font-size: 18px;
+}
+
+.project p {
+    margin-bottom: 15px;
+    color: #8797aa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-tech {
+    color: #55d6ff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item {
+    padding: 22px 25px;
+    background: #0b1827;
+    border: 1px solid #24384d;
+    border-radius: 12px;
+}
+
+.education-item h3 {
+    margin-bottom: 7px;
+    color: #e9eef7;
+    font-size: 19px;
+}
+
+.education-item p {
+    color: #8797aa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.resume-section .back-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 20px;
+    border: 1px solid #33465b;
+    border-radius: 7px;
+    color: #dce6f2;
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.resume-section .back-button:hover {
+    transform: translateY(-2px);
+    border-color: #55d6ff;
+    color: #55d6ff;
+}
+
+/* =========================
+   RESUME MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .resume-container {
+        width: 88%;
+        padding: 70px 0;
+    }
+
+    .resume-header {
+        padding-bottom: 35px;
+    }
+
+    .resume-header h1 {
+        font-size: 42px;
+    }
+
+    .job-title {
+        font-size: 17px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .contact-info span:nth-of-type(odd) {
+        display: none;
+    }
+
+    .resume-section {
+        padding: 35px 0;
+    }
+
+    .resume-section h2 {
+        font-size: 25px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 450px) {
+
+    .resume-container {
+        width: 86%;
+        padding: 55px 0;
+    }
+
+    .resume-header h1 {
+        font-size: 36px;
+    }
+
+    .job-title {
+        font-size: 16px;
+    }
+
+    .resume-section {
+        padding: 30px 0;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        padding: 20px;
+    }
+
+    .project {
+        padding: 21px;
+    }
+
+    .experience-item {
+        padding-left: 18px;
+    }
+}
