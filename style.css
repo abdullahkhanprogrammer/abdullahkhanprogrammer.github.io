@@ -1537,3 +1537,22 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* ABOUT SCROLL ANIMATION */
+
+.about-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-left.show,
+.about-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}

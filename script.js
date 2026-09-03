@@ -103,3 +103,23 @@ if (typingText) {
 
     typeEffect();
 }
+const aboutElements = document.querySelectorAll(
+    ".about-left, .about-right"
+);
+
+const aboutObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+aboutElements.forEach(element => {
+    aboutObserver.observe(element);
+});
