@@ -103,6 +103,10 @@ if (typingText) {
 
     typeEffect();
 }
+// =========================
+// ABOUT SCROLL ANIMATION
+// =========================
+
 const aboutElements = document.querySelectorAll(
     ".about-left, .about-right"
 );
@@ -110,9 +114,13 @@ const aboutElements = document.querySelectorAll(
 const aboutObserver = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
+
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
             }
+
         });
     },
     {
